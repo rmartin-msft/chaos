@@ -99,7 +99,7 @@ The System Managed Identity is named after the chaos experiment. As an aditional
 ![Image](images/StopAppServicePermissions.jpg)
 
 
-## Generate some load for the serivce.
+## Generate some load for the service.
 
 We'll need some load to test the service is working. A starter Azure Load Test is available in the repo, which you can use to generate some background load on the site. The load-test creates a light background load, by logging and lookign for past orders. You can get the load test from the `jmeter` folder in this repo.
 
@@ -198,7 +198,7 @@ We can then finish by deploy the ZIP to the second site
 `az webapp deploy -g 'rg-chaos2' --src-path D:\WebSite.zip --name app-web-mhokmntemphxu2`
 
 
-## Add a load balancer and 
+## Add a load balancer
 
 Add an Azure Load Balancer or Application Gateway with a public IP to balance traffic between the two App Regions.
 
